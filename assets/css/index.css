@@ -1,0 +1,463 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+#header {
+    box-shadow: inset 0 0 0 1000px rgba(30, 31, 61, 0.7);
+    background-image: url("/assets/img/bg-header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#get-estimate {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 15px 60px;
+    border: none;
+    background-color: #b9d2ed;
+    color: #1e1f3d;
+    outline: none;
+}
+
+.header-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6fd7e4;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    width: 53%;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+#mobileOs {
+    height: 100vh;
+    background-color: #b9d2ed;
+}
+
+#mobileOs h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #1e1f3d;
+    margin-bottom: 20px;
+}
+
+.os-content, .screens-content, .design-content, .api-content, .auth-content, 
+.func-content, .date-content, .social-content, .bill-content, .mult-content, 
+.admin-content, .sec-content {
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.os-button, .screen-button, .design-button, .api-button, .auth-button, .func-button, 
+.date-button, .social-button, .bill-button, .mult-button, .admin-button, .sec-button {
+    width: 240px;
+    height: 75px;
+    border-radius: 50px;
+    border: none;
+    background-color: #adc9e9;
+    margin-top: 60px;
+    font-size: 20px;
+    font-family: "Raleway";
+    font-weight: 600;
+    color: #1e1f3d;
+    outline: none;
+}
+
+#osButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    flex-wrap: wrap;
+}
+
+span {
+    font-size: 18px;
+}
+
+
+.counter p {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    font-family: "Raleway";
+    font-weight: 500;
+    color: #1e1f3d;
+    margin-right: 40px;
+    padding-top: 40px;
+}
+
+.prev-question, .prev-question-des, .prev-question-auth, .prev-question-func, 
+.prev-question-date, .prev-question-social, .prev-question-bill, .prev-question-mult, 
+.prev-question-admin, .prev-question-sec {
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#estOs, #estScreens, #estAPI, #estAuth, #estDate, #estSocial, #estMult, #estAdmin{
+    font-family: "Raleway";
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 0;
+    color: #1e1f3d;
+}
+
+#estDesign, #estFunc, #estBill, #estSec {
+    font-family: "Raleway";
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 0;
+    color: #fff;
+}
+
+#screens {
+    box-shadow: inset 0 0 0 1000px rgba(228, 241, 254, 0.7);
+    background-image: url("/assets/img/screens-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#screens h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #1e1f3d;
+    margin-bottom: 20px;
+}
+
+#screenButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 20px;
+    vertical-align: top; 
+    margin-right: 5px;
+}
+
+
+#design, #func, #bill, #sec {
+    height: 100vh;
+    background-color: #5f619c;
+}
+
+#design h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#design p {
+    color: #fff;
+}
+
+#func p {
+    color: #fff;
+}
+
+#bill p {
+    color: #fff;
+}
+
+#sec p {
+    color: #fff;
+}
+
+#designButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    flex-wrap: wrap;
+}
+
+.prev-question a{
+    color: #5f619c;
+}
+
+.prev-question-des a{
+    color: #b9d2ed;
+}
+
+.prev-question-func  a{
+    color: #b9d2ed;
+}
+
+.prev-question-auth a{
+    color: #5f619c;
+}
+
+.prev-question-social a{
+    color: #5f619c;
+}
+
+.prev-question-bill  a{
+    color: #b9d2ed;
+}
+
+.prev-question-date  a{
+    color: #5f619c;
+}
+
+.prev-question-mult  a{
+    color: #5f619c;
+}
+
+.prev-question-admin a{
+    color: #5f619c;
+}
+
+.prev-question-sec  a{
+    color: #b9d2ed;
+}
+
+#api {
+    height: 100vh;
+    background-color: #b9d2ed;
+}
+
+#api h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #1e1f3d;
+    margin-bottom: 20px;
+}
+
+#apiButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    flex-wrap: wrap;
+}
+
+#auth {
+    box-shadow: inset 0 0 0 1000px rgba(228, 241, 254, 0.7);
+    background-image: url("/assets/img/authentification-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#auth h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #1e1f3d;
+    margin-bottom: 20px;
+}
+
+#authButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    flex-wrap: wrap;
+}
+
+#func h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#funcButtons {
+    width: 90%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.func-button {
+    margin: 60px 15px 20px 15px;
+}
+
+.func-button:nth-child(5) {
+    margin: 20px 15px;
+}
+
+.func-button:nth-child(6) {
+    margin: 20px 15px;
+}
+
+#date {
+    height: 100vh;
+    background-color: #b9d2ed;
+}
+
+#date h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #1e1f3d;
+    margin-bottom: 20px;
+}
+
+#dateButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+#social {
+    box-shadow: inset 0 0 0 1000px rgba(228, 241, 254, 0.7);
+    background-image: url("/assets/img/social-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#socialButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+#social h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #1e1f3d;
+    margin-bottom: 20px;
+}
+
+.social-button:last-child {
+    margin-top: 20px;
+}
+
+#billButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    flex-wrap: wrap;
+}
+
+#bill h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#mult {
+    height: 100vh;
+    background-color: #b9d2ed;
+}
+
+#multButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+#mult h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #1e1f3d;
+    margin-bottom: 20px;
+}
+
+#admin {
+    box-shadow: inset 0 0 0 1000px rgba(228, 241, 254, 0.7);
+    background-image: url("/assets/img/administration-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#adminButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    flex-wrap: wrap;
+}
+
+#admin h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #1e1f3d;
+    margin-bottom: 20px;
+}
+
+#secButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    flex-wrap: wrap;
+}
+
+#sec h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
