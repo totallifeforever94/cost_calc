@@ -21,7 +21,7 @@ let totalObject = {
 
 $(document).ready(function() {
     
-    $('button').click(function() {
+    $('.hourly-price-button, .screen-size-button, .hours-quantity-button').click(function() {
        $(this).toggleClass('selected'); 
     });
     
@@ -69,8 +69,8 @@ $(document).ready(function() {
         } else {
             hoursQuantity = 0;
         }
-         totalObject[parentId] = hoursQuantity;
-            countTotalPrice();
+        totalObject[parentId] = hoursQuantity;
+        countTotalPrice();
     });
 
     function countTotalPrice() {

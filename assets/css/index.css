@@ -38,6 +38,11 @@ a:visited {
     color: #1e1f3d;
 }
 
+#get-estimate:hover {
+    background-color: #333685;
+    color: #fff;
+}
+
 .header-content {
     height: 100vh;
     display: flex;
