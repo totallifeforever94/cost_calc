@@ -120,6 +120,126 @@
             "twoFactorAuthentication":11,
             "userPrivacySettings":21
          }
+      },
+      "mediumLarge":{  
+         "userInterface":{  
+            "stock":23,
+            "custom":40,
+            "animated":44
+         },
+         "apis":{  
+            "noApi":24,
+            "simple":30,
+            "advanced":64
+         },
+         "authentification":{  
+            "email":9,
+            "social":18,
+            "doubleAuth":21
+         },
+         "functionality":{  
+            "dashboard":13,
+            "activityFeed":13,
+            "profiles":13,
+            "textSearching":13,
+            "fileUploading":22,
+            "multilingual":13
+         },
+         "datesAndLocation":{  
+            "geolocation":13,
+            "mapMarkers":22,
+            "bookings":29,
+            "calendar":22
+         },
+         "socialAndEngagements":{  
+            "messaging":66,
+            "socialSharing":13,
+            "forumsOrCommenting":13,
+            "pushNotifications":34,
+            "ratingSystem":22
+         },
+         "billing":{  
+            "paymentProcessing":34,
+            "shoppingCart":22,
+            "userMarketplace":18
+         },
+         "multimedia":{  
+            "video":62,
+            "audio":66,
+            "photo":66
+         },
+         "administrationAndAnalytics":{  
+            "cmsIntegration":86,
+            "usersAdministration":76,
+            "performanceMonitoring":29,
+            "paymentAdministration":62
+         },
+         "security":{  
+            "roleBased":24,
+            "dataProtection":14,
+            "twoFactorAuthentication":13,
+            "userPrivacySettings":26
+         }
+      },
+      "large":{  
+         "userInterface":{  
+            "stock":30,
+            "custom":48,
+            "animated":50
+         },
+         "apis":{  
+            "noApi":32,
+            "simple":40,
+            "advanced":80
+         },
+         "authentification":{  
+            "email":9,
+            "social":20,
+            "doubleAuth":28
+         },
+         "functionality":{  
+            "dashboard":16,
+            "activityFeed":16,
+            "profiles":16,
+            "textSearching":16,
+            "fileUploading":24,
+            "multilingual":16
+         },
+         "datesAndLocation":{  
+            "geolocation":16,
+            "mapMarkers":24,
+            "bookings":40,
+            "calendar":24
+         },
+         "socialAndEngagements":{  
+            "messaging":80,
+            "socialSharing":16,
+            "forumsOrCommenting":16,
+            "pushNotifications":40,
+            "ratingSystem":24
+         },
+         "billing":{  
+            "paymentProcessing":40,
+            "shoppingCart":24,
+            "userMarketplace":20
+         },
+         "multimedia":{  
+            "video":80,
+            "audio":80,
+            "photo":80
+         },
+         "administrationAndAnalytics":{  
+            "cmsIntegration":100,
+            "usersAdministration":90,
+            "performanceMonitoring":40,
+            "paymentAdministration":80
+         },
+         "security":{  
+            "roleBased":28,
+            "dataProtection":16,
+            "twoFactorAuthentication":16,
+            "userPrivacySettings":32
+         }
       }
    },
    
@@ -244,6 +364,126 @@
                "twoFactorAuthentication":11,
                "userPrivacySettings":21
          }
+      },
+         "mediumLarge": {
+            "userInterface": {
+               "stock": 23,
+               "custom": 40,
+               "animated": 44
+            },
+            "apis": {
+               "noApi": 24,
+               "simple": 30,
+               "advanced": 64
+            },
+            "authentification": {
+               "email": 9,
+               "social": 18,
+               "doubleAuth": 21
+            },
+            "functionality": {
+               "dashboard": 13,
+               "activityFeed": 13,
+               "profiles": 13,
+               "textSearching": 13,
+               "fileUploading": 22,
+               "multilingual": 13
+            },
+            "datesAndLocation": {
+               "geolocation": 13,
+               "mapMarkers": 22,
+               "bookings": 32,
+               "calendar": 22
+            },
+            "socialAndEngagements": {
+               "messaging": 66,
+               "socialSharing": 13,
+               "forumsOrCommenting": 13,
+               "pushNotifications": 34,
+               "ratingSystem": 22
+            },
+            "billing": {
+               "paymentProcessing": 34,
+               "shoppingCart": 22,
+               "userMarketplace": 22
+            },
+            "multimedia": {
+               "video": 67,
+               "audio": 66,
+               "photo": 66
+            },
+            "administrationAndAnalytics": {
+               "cmsIntegration": 86,
+               "usersAdministration": 76,
+               "performanceMonitoring": 29,
+               "paymentAdministration": 70
+            },
+            "security": {
+               "roleBased": 24,
+               "dataProtection": 14,
+               "twoFactorAuthentication": 13,
+               "userPrivacySettings": 26
+            }
+      },
+         "large":{  
+         "userInterface":{  
+            "stock":30,
+            "custom":48,
+            "animated":50
+         },
+         "apis":{  
+            "noApi":32,
+            "simple":40,
+            "advanced":80
+         },
+         "authentification":{  
+            "email":9,
+            "social":20,
+            "doubleAuth":28
+         },
+         "functionality":{  
+            "dashboard":16,
+            "activityFeed":16,
+            "profiles":16,
+            "textSearching":16,
+            "fileUploading":24,
+            "multilingual":16
+         },
+         "datesAndLocation":{  
+            "geolocation":16,
+            "mapMarkers":24,
+            "bookings":40,
+            "calendar":24
+         },
+         "socialAndEngagements":{  
+            "messaging":80,
+            "socialSharing":16,
+            "forumsOrCommenting":16,
+            "pushNotifications":40,
+            "ratingSystem":24
+         },
+         "billing":{  
+            "paymentProcessing":40,
+            "shoppingCart":24,
+            "userMarketplace":20
+         },
+         "multimedia":{  
+            "video":80,
+            "audio":80,
+            "photo":80
+         },
+         "administrationAndAnalytics":{  
+            "cmsIntegration":100,
+            "usersAdministration":90,
+            "performanceMonitoring":40,
+            "paymentAdministration":88
+         },
+         "security":{  
+            "roleBased":28,
+            "dataProtection":16,
+            "twoFactorAuthentication":16,
+            "userPrivacySettings":32
+         }
       }
    },
    
@@ -367,6 +607,126 @@
             "dataProtection": 19,
             "twoFactorAuthentication": 19,
             "userPrivacySettings": 43
+         }
+      },
+      "mediumLarge": {
+         "userInterface": {
+            "stock": 42,
+            "custom": 66,
+            "animated": 70
+         },
+         "apis": {
+            "noApi": 48,
+            "simple": 30,
+            "advanced": 64
+         },
+         "authentification": {
+            "email": 9,
+            "social": 18,
+            "doubleAuth": 46
+         },
+         "functionality": {
+            "dashboard": 27,
+            "activityFeed": 27,
+            "profiles": 27,
+            "textSearching": 27,
+            "fileUploading": 34,
+            "multilingual": 22
+         },
+         "datesAndLocation": {
+            "geolocation": 27,
+            "mapMarkers": 30,
+            "bookings": 44,
+            "calendar": 30
+         },
+         "socialAndEngagements": {
+            "messaging": 86,
+            "socialSharing": 19,
+            "forumsOrCommenting": 19,
+            "pushNotifications": 40,
+            "ratingSystem": 30
+         },
+         "billing": {
+            "paymentProcessing": 40,
+            "shoppingCart": 30,
+            "userMarketplace": 34
+         },
+         "multimedia": {
+            "video": 86,
+            "audio": 86,
+            "photo": 134
+         },
+         "administrationAndAnalytics": {
+            "cmsIntegration": 144,
+            "usersAdministration": 134,
+            "performanceMonitoring": 44,
+            "paymentAdministration": 85
+         },
+         "security": {
+            "roleBased": 48,
+            "dataProtection": 22,
+            "twoFactorAuthentication": 22,
+            "userPrivacySettings": 54
+         }
+      },
+      "large":{  
+         "userInterface":{  
+            "stock":60,
+            "custom":80,
+            "animated":80
+         },
+         "apis":{  
+            "noApi":64,
+            "simple":40,
+            "advanced":80
+         },
+         "authentification":{  
+            "email":9,
+            "social":20,
+            "doubleAuth":56
+         },
+         "functionality":{  
+            "dashboard":32,
+            "activityFeed":32,
+            "profiles":32,
+            "textSearching":32,
+            "fileUploading":40,
+            "multilingual":24
+         },
+         "datesAndLocation":{  
+            "geolocation":32,
+            "mapMarkers":32,
+            "bookings":60,
+            "calendar":32
+         },
+         "socialAndEngagements":{  
+            "messaging":100,
+            "socialSharing":22,
+            "forumsOrCommenting":22,
+            "pushNotifications":45,
+            "ratingSystem":32
+         },
+         "billing":{  
+            "paymentProcessing":45,
+            "shoppingCart":32,
+            "userMarketplace":40
+         },
+         "multimedia":{  
+            "video":100,
+            "audio":100,
+            "photo":160
+         },
+         "administrationAndAnalytics":{  
+            "cmsIntegration":180,
+            "usersAdministration":170,
+            "performanceMonitoring":60,
+            "paymentAdministration":120
+         },
+         "security":{  
+            "roleBased":56,
+            "dataProtection":24,
+            "twoFactorAuthentication":24,
+            "userPrivacySettings":64
          }
       }
    }

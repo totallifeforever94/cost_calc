@@ -4,6 +4,8 @@ let currentAplicationType;
 let hoursQuantity;
 let totalSum = 0;
 
+let pricesData;
+
 let totalObject = {
     userInterface: 0,
     apis: 0,
@@ -18,11 +20,8 @@ let totalObject = {
 };
 
 $(document).ready(function() {
-
-    let prices;
-
     $.getJSON('js/prices.json', function(data) {
-        prices = data;
+        pricesData = data;
     });
 
     $('.hourly-price-button').click(function() {
@@ -30,44 +29,57 @@ $(document).ready(function() {
         $('.hourly-price-button:focus').each(function() {
             $(this).addClass('selected').siblings().removeClass('selected');
             currentAplicationType = $(this).val();
-            hourlyRate = prices[currentAplicationType].hourlyPrice;
+            hourlyRate = pricesData[currentAplicationType].hourlyPrice;
+            countTotalPrice();
+            scrollToNextSection($(this));
         });
-        $('.total').html('$' + hourlyRate);
-        $('body, html').animate({ scrollTop: window.pageYOffset + $(window).height()}, 1000);
     });
 
-
     $('.screen-size-button').click(function() {
-
         $('.screen-size-button:focus').each(function() {
             $(this).addClass('selected').siblings().removeClass('selected');
+            
             let btnValue = $(this).val();
+            
             screenSize = btnValue;
+            
+            countTotalPrice();
+            scrollToNextSection($(this));
         });
-        
-        $('body, html').animate({ scrollTop: window.pageYOffset + $(window).height()}, 1000);
-        
     });
 
     $('.hours-quantity-button').click(function() {
-
         $('.hours-quantity-button:focus').each(function() {
             $(this).addClass('selected').siblings().removeClass('selected');
+            
             let btnValue = $(this).val();
             let parentId = $(this).parent().attr('id');
-            hoursQuantity = prices[currentAplicationType][screenSize][parentId][btnValue];
+            
+            hoursQuantity = pricesData[currentAplicationType][screenSize][parentId][btnValue];
             totalObject[parentId] = hoursQuantity;
+            
             countTotalPrice();
+            scrollToNextSection($(this));
         });
-        
-        $('body, html').animate({ scrollTop: window.pageYOffset + $(window).height()}, 1000);
     });
 
     function countTotalPrice() {
         totalSum = 0;
+        
         for (let key in totalObject) {
             totalSum += totalObject[key] * hourlyRate;
         }
-        $('.total').html('$' + totalSum);
+        
+        if (totalSum === 0) {
+            return $('.total').html('$' + hourlyRate);
+        } else {
+            $('.total').html('$' + totalSum);
+        }
+    };
+
+    function scrollToNextSection(btn) {
+        $('html, body').animate({
+            scrollTop: btn.parents('section').next().offset().top
+        }, 1000);
     };
 });
