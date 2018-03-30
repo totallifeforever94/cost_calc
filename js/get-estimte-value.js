@@ -20,47 +20,57 @@ let totalObject = {
 };
 
 $(document).ready(function() {
+    
+    $('button').click(function() {
+       $(this).toggleClass('selected'); 
+    });
+    
     $.getJSON('js/prices.json', function(data) {
         pricesData = data;
     });
 
     $('.hourly-price-button').click(function() {
-
-        $('.hourly-price-button:focus').each(function() {
-            $(this).addClass('selected').siblings().removeClass('selected');
+        if ($(this).hasClass('selected')) {
+            $(this).siblings().removeClass('selected');
             currentAplicationType = $(this).val();
             hourlyRate = pricesData[currentAplicationType].hourlyPrice;
-            countTotalPrice();
             scrollToNextSection($(this));
-        });
+        } else {
+            $(this).removeClass('selected');
+            hourlyRate = 0;
+        }
+        countTotalPrice();
     });
 
     $('.screen-size-button').click(function() {
-        $('.screen-size-button:focus').each(function() {
-            $(this).addClass('selected').siblings().removeClass('selected');
+        if ($(this).hasClass('selected')) {
+            $(this).siblings().removeClass('selected');
             
             let btnValue = $(this).val();
-            
             screenSize = btnValue;
             
             countTotalPrice();
             scrollToNextSection($(this));
-        });
+        } else {
+            $(this).removeClass('selected');
+        }
     });
 
     $('.hours-quantity-button').click(function() {
-        $('.hours-quantity-button:focus').each(function() {
-            $(this).addClass('selected').siblings().removeClass('selected');
+        let btnValue = $(this).val();
+        let parentId = $(this).parent().attr('id');
+        
+        if ($(this).hasClass('selected')){
+            $(this).siblings().removeClass('selected');
             
-            let btnValue = $(this).val();
-            let parentId = $(this).parent().attr('id');
             
             hoursQuantity = pricesData[currentAplicationType][screenSize][parentId][btnValue];
-            totalObject[parentId] = hoursQuantity;
-            
-            countTotalPrice();
             scrollToNextSection($(this));
-        });
+        } else {
+            hoursQuantity = 0;
+        }
+         totalObject[parentId] = hoursQuantity;
+            countTotalPrice();
     });
 
     function countTotalPrice() {

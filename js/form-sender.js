@@ -1,9 +1,9 @@
 $(document).ready(function() {
     
     $("#submit").click(function(event) {
-        event.preventDefault();
         
         if ($("#contactForm")[0].checkValidity()) {
+            event.preventDefault();
             $.ajax({
                 url: "https://tranquil-sierra-86540.herokuapp.com/sava.taras@gmail.com",
                 method: "POST",
@@ -15,7 +15,6 @@ $(document).ready(function() {
             })
 
             .done(() => {
-                alert('DONE!!!!!!!!!');
                 $('#name').val('');
                 $('#email').val('');
             });

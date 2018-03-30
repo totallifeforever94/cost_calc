@@ -1,11 +1,6 @@
 $(document).ready(function() {
     $('a').addClass('smooth');
     
-    
-    $('button').click(function() {
-       $(this).toggleClass('selected'); 
-    });
-    
     $(function() {
         $('.smooth').on('click', function(event) {
             const target = $(this.getAttribute('href'));
