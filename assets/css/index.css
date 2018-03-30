@@ -39,7 +39,7 @@ a:visited {
 }
 
 #get-estimate:hover {
-    background-color: #333685;
+    background-color: #515388;
     color: #fff;
 }
 
@@ -548,7 +548,7 @@ input:focus::-webkit-input-placeholder {
 button:hover {
     outline: none;
     box-shadow: 0 0 2px #79b8ff;
-    background-color: #333685;
+    background-color: #515388;
     color: #fff;
     cursor: pointer;
 }
