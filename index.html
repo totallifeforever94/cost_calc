@@ -23,14 +23,14 @@
     <section id="mobileOs">
         <div class="counter">
             <p>Rough estimate</p>
-            <p id="estOs">$0</p>
+            <p class="estOs total">$0</p>
         </div>
         <div class="os-content">
             <h1>Mobile Operating System</h1>
             <div id="osButtons">
-                <button class="os-button">Android</button>
-                <button class="os-button">IOS</button>
-                <button class="os-button">IOS+Android <br> <span>Cross-platform</span></button>
+                <button id="android" class="option-button hourly-price-button" value="android">Android</button>
+                <button id="ios" class="option-button hourly-price-button" value="ios">IOS</button>
+                <button id="androidAndIos" class="option-button hourly-price-button" value="crossPlatform">IOS+Android <br> <span>Cross-platform</span></button>
             </div>
         </div>
     </section>
@@ -38,15 +38,15 @@
     <section id="screens">
         <div class="counter">
             <p><span class="prev-question"><a href="#mobileOs"><img src="assets/img/left-arrow.svg">Previous Question</img></a></span>Rough estimate</p>
-            <p id="estScreens">$0</p>
+            <p class="estScreens total" >$0</p>
         </div>
         <div class="screens-content">
             <h1>Number of Screens</h1>
             <div id="screenButtons">
-                <button class="screen-button">2-8</button>
-                <button class="screen-button">9-15</button>
-                <button class="screen-button">16-21</button>
-                <button class="screen-button">21+</button>
+                <button id="smallScreen" class="option-button screen-size-button" value="small">2-8</button>
+                <button id="mediumScreen" class="option-button screen-size-button" value="medium">9-15</button>
+                <button id="mediumLargeScreen" class="option-button screen-size-button" value="mediumLarge">16-21</button>
+                <button id="LargeScreen" class="option-button screen-size-button" value="large">21+</button>
             </div>
         </div>
     </section>
@@ -54,14 +54,14 @@
     <section id="design">
         <div class="counter">
             <p><span class="prev-question-des"><a href="#screens"><img src="assets/img/left-arrow.svg">Previous Question</img></a></span>Rough estimate</p>
-            <p id="estDesign">$0</p>
+            <p class="estDesign total" >$0</p>
         </div>
         <div class="design-content">
             <h1>User Interface Design</h1>
-            <div id="designButtons">
-                <button class="design-button">Stock design</button>
-                <button class="design-button">Custom design</button>
-                <button class="design-button">Animated UI</button>
+            <div id="userInterface">
+                <button class="option-button hours-quantity-button" value="stock">Stock design</button>
+                <button class="option-button hours-quantity-button" value="custom">Custom design</button>
+                <button class="option-button hours-quantity-button" value="animated">Animated UI</button>
             </div>
         </div>
     </section>
@@ -69,14 +69,14 @@
     <section id="api">
         <div class="counter">
             <p><span class="prev-question"><a href="#design"><img src="assets/img/left-arrow.svg">Previous Question</img></a></span>Rough estimate</p>
-            <p id="estAPI">$0</p>
+            <p class="estAPI total" >$0</p>
         </div>
         <div class="api-content">
             <h1>APIs & Integrations</h1>
-            <div id="apiButtons">
-                <button class="api-button">App without API</button>
-                <button class="api-button">Simple API <br> without accounts</button>
-                <button class="api-button">Advanced API</button>
+            <div id="apis">
+                <button class="option-button hours-quantity-button" value="noApi">App without API</button>
+                <button class="option-button hours-quantity-button" value="simple">Simple API <br> without accounts</button>
+                <button class="option-button hours-quantity-button" value="advanced">Advanced API</button>
             </div>
         </div>    
     </section>
@@ -84,14 +84,14 @@
     <section id="auth">
         <div class="counter">
             <p><span class="prev-question-auth"><a href="#api"><img src="assets/img/left-arrow.svg">Previous Question</img></a></span>Rough estimate</p>
-            <p id="estAuth">$0</p>
+            <p class="estAuth total" >$0</p>
         </div>
         <div class="auth-content">
             <h1>Authentification & Authorization</h1>
-            <div id="authButtons">
-                <button class="auth-button">Email logging</button>
-                <button class="auth-button">Social logging</button>
-                <button class="auth-button">Two-factor authentifiaction</button>
+            <div id="authentification">
+                <button class="option-button hours-quantity-button" value="email">Email logging</button>
+                <button class="option-button hours-quantity-button" value="social">Social logging</button>
+                <button class="option-button hours-quantity-button" value="doubleAuth">Two-factor authentifiaction</button>
             </div>
         </div>    
     </section>    
@@ -99,17 +99,17 @@
     <section id="func">
         <div class="counter">
             <p><span class="prev-question-func"><a href="#auth"><img src="assets/img/left-arrow.svg">Previous Question</img></a></span>Rough estimate</p>
-            <p id="estFunc">$0</p>
+            <p class="estFunc total" >$0</p>
         </div>
         <div class="func-content">
             <h1>Functionality & Features</h1>
-            <div id="funcButtons">
-                <button class="func-button">Dashboard</button>
-                <button class="func-button">Activity feed</button>
-                <button class="func-button">User profile</button>
-                <button class="func-button">Text seaching</button>
-                <button class="func-button">File uploading</button>
-                <button class="func-button">Multilingual support</button>
+            <div id="functionality">
+                <button class="option-button hours-quantity-button" value="dashboard">Dashboard</button>
+                <button class="option-button hours-quantity-button" value="activityFeed">Activity feed</button>
+                <button class="option-button hours-quantity-button" value="profiles">User profile</button>
+                <button class="option-button hours-quantity-button" value="textSearching">Text seaching</button>
+                <button class="option-button hours-quantity-button" value="fileUploading">File uploading</button>
+                <button class="option-button hours-quantity-button" value="multilingual">Multilingual support</button>
             </div>
         </div>
     </section>
@@ -117,15 +117,15 @@
     <section id="date">
         <div class="counter">
             <p><span class="prev-question-date"><a href="#func"><img src="assets/img/left-arrow.svg">Previous Question</img></a></span>Rough estimate</p>
-            <p id="estDate">$0</p>
+            <p class="estDate total" >$0</p>
         </div>
         <div class="date-content">
             <h1>Dates & Locations</h1>
-            <div id="dateButtons">
-                <button class="date-button">Geolocation</button>
-                <button class="date-button">Custom map markers</button>
-                <button class="date-button">Bookings</button>
-                <button class="date-button">Scheduling/Calendar</button>
+            <div id="datesAndLocation">
+                <button class="option-button hours-quantity-button" value="geolocation">Geolocation</button>
+                <button class="option-button hours-quantity-button" value="mapMarkers">Custom map markers</button>
+                <button class="option-button hours-quantity-button" value="bookings">Bookings</button>
+                <button class="option-button hours-quantity-button" value="calendar">Scheduling/Calendar</button>
             </div>
         </div>    
     </section>
@@ -133,16 +133,16 @@
     <section id="social">
         <div class="counter">
             <p><span class="prev-question-social"><a href="#date"><img src="assets/img/left-arrow.svg">Previous Question</img></a></span>Rough estimate</p>
-            <p id="estSocial">$0</p>
+            <p class="estSocial total" >$0</p>
         </div>
         <div class="social-content">
             <h1>Social & Engagement</h1>
-            <div id="socialButtons">
-                <button class="social-button">Messaging</button>
-                <button class="social-button">Social sharing</button>
-                <button class="social-button">Forums or commenting</button>
-                <button class="social-button">Push notifications</button>
-                <button class="social-button">Rating system</button>
+            <div id="socialAndEngagements">
+                <button class="option-button hours-quantity-button" value="messaging">Messaging</button>
+                <button class="option-button hours-quantity-button" value="socialSharing">Social sharing</button>
+                <button class="option-button hours-quantity-button" value="forumsOrCommenting">Forums or commenting</button>
+                <button class="option-button hours-quantity-button" value="pushNotifications">Push notifications</button>
+                <button class="option-button hours-quantity-button" value="ratingSystem">Rating system</button>
             </div>
         </div>    
     </section>   
@@ -150,14 +150,14 @@
     <section id="bill">
         <div class="counter">
             <p><span class="prev-question-bill"><a href="#social"><img src="assets/img/left-arrow.svg">Previous Question</img></a></span>Rough estimate</p>
-            <p id="estBill">$0</p>
+            <p class="estBill total" >$0</p>
         </div>
         <div class="bill-content">
             <h1>Billing & eCommerce</h1>
-            <div id="billButtons">
-                <button class="bill-button">Payment: processing</button>
-                <button class="bill-button">Shopping cart</button>
-                <button class="bill-button">User marketplace</button>
+            <div id="billing">
+                <button class="option-button hours-quantity-button" value="paymentProcessing">Payment: processing</button>
+                <button class="option-button hours-quantity-button" value="shoppingCart">Shopping cart</button>
+                <button class="option-button hours-quantity-button" value="userMarketplace">User marketplace</button>
             </div>
         </div>
     </section>
@@ -165,14 +165,14 @@
     <section id="mult">
         <div class="counter">
             <p><span class="prev-question-mult"><a href="#bill"><img src="assets/img/left-arrow.svg">Previous Question</img></a></span>Rough estimate</p>
-            <p id="estMult">$0</p>
+            <p class="estMult total">$0</p>
         </div>
         <div class="mult-content">
             <h1>Used Multimedia</h1>
-            <div id="multButtons">
-                <button class="mult-button">Video</button>
-                <button class="mult-button">Audio</button>
-                <button class="mult-button">Photo</button>
+            <div id="multimedia">
+                <button class="option-button hours-quantity-button" value="video">Video</button>
+                <button class="option-button hours-quantity-button" value="audio">Audio</button>
+                <button class="option-button hours-quantity-button" value="photo">Photo</button>
             </div>
         </div>
     </section>
@@ -180,15 +180,15 @@
     <section id="admin">
         <div class="counter">
             <p><span class="prev-question-admin"><a href="#mult"><img src="assets/img/left-arrow.svg">Previous Question</img></a></span>Rough estimate</p>
-            <p id="estAdmin">$0</p>
+            <p class="estAdmin total" >$0</p>
         </div>
         <div class="admin-content">
             <h1>Administration & Analytics</h1>
-            <div id="adminButtons">
-                <button class="admin-button">CMS integration</button>
-                <button class="admin-button">User administration</button>
-                <button class="admin-button">Performance monitoring & reporting</button>
-                <button class="admin-button">Payment administration</button>
+            <div id="administrationAndAnalytics">
+                <button class="option-button hours-quantity-button" value="cmsIntegration">CMS integration</button>
+                <button class="option-button hours-quantity-button" value="usersAdministration">User administration</button>
+                <button class="option-button hours-quantity-button" value="performanceMonitoring">Performance monitoring & reporting</button>
+                <button class="option-button hours-quantity-button" value="paymentAdministration">Payment administration</button>
             </div>
         </div>    
     </section>
@@ -196,14 +196,15 @@
     <section id="sec">
         <div class="counter">
             <p><span class="prev-question-sec"><a href="#admin"><img src="assets/img/left-arrow.svg">Previous Question</img></a></span>Rough estimate</p>
-            <p id="estSec">$0</p>
+            <p class="estSec total" >$0</p>
         </div>
         <div class="sec-content">
             <h1>Security & Relability</h1>
-            <div id="secButtons">
-                <button class="sec-button">Role-based access</button>
-                <button class="sec-button">Data protection</button>
-                <button class="sec-button">User privacy settings</button>
+            <div id="security">
+                <button class="option-button hours-quantity-button" value="roleBased">Role-based access</button>
+                <button class="option-button hours-quantity-button" value="dataProtection">Data protection</button>
+                <button class="option-button hours-quantity-button" value="twoFactorAuthentication">Two factor authentifiaction</button>
+                <button class="option-button hours-quantity-button" value="twoFactorAuthentication">User privacy settings</button>
             </div>
         </div>    
     </section>
@@ -212,13 +213,21 @@
         <div class="contact-content">
             <h1>Want to get a Detailed estimate?</h1>
             <p>Just write us your name and email</p>
-            <form>
-                <input type="text" name="client-name" placeholder="Name">
-                <input type="email" name="client-email" placeholder="Email">
-                <input type="submit" value="Get Estimate">
+            <form id="contactForm">
+                <input id="name" type="text" name="client-name" placeholder="Name" required>
+                <input id="email" type="email" name="client-email" placeholder="Email" required>
+                <input id="submit" type="submit" value="Get Estimate">
             </form>
         </div>
     </section>
     
+    
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/form-send.js"></script>
+    <script src="js/get-estimte-value.js"></script>
 </body>
 </html>
