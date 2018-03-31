@@ -39,7 +39,7 @@ a:visited {
 }
 
 #get-estimate:hover {
-    background-color: #515388;
+    background-color: transparent;
     color: #fff;
 }
 
@@ -559,4 +559,7 @@ button:focus {
 
 input[type="submit"]:hover {
     cursor: pointer;
+    background-color: transparent;
+    box-shadow: 0 0 2px #79b8ff;
+    color: #fff;
 }
