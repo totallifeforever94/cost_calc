@@ -4,9 +4,14 @@
     max-width: 1949px;
 }
 
-.selected {
-    background-color: #333685 !important;
-    color: #fff !important;
+img {
+    width: 20px;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+span {
+    font-size: 18px;
 }
 
 a {
@@ -15,6 +20,74 @@ a {
 
 a:visited {
     text-decoration: none;
+}
+
+input {
+    display: flex;
+    width: 400px;
+    height: 55px;
+    font-size: 18px;
+    font-family: "Raleway";
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+input[type='submit'] {
+    justify-content: center;
+    height: 50px;
+    background-color: #b9d2ed;
+    border: none;
+    color: #1e1f3d;
+    font-weight: 700;
+    margin-top: 45px;
+    padding: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+button:hover {
+    outline: none;
+    box-shadow: 0 0 2px #79b8ff;
+    background-color: #515388;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 0 0 2px #79b8ff;
+    color: #fff;
+}
+
+@-webkit-keyframes autofill {
+    to {
+        color: #fff;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
 }
 
 #header {
@@ -43,34 +116,6 @@ a:visited {
     color: #fff;
 }
 
-.header-content {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.header-content h1 {
-    font-family: "Raleway";
-    font-weight: 800;
-    font-size: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #6fd7e4;
-    margin-bottom: 20px;
-}
-
-.header-content p {
-    width: 53%;
-    text-align: center;
-    font-family: "Raleway";
-    font-size: 24px;
-    color: #ffffff;
-    margin-bottom: 35px;
-    line-height: 1.6;
-}
-
 #mobileOs {
     height: 100vh;
     background-color: #b9d2ed;
@@ -85,74 +130,11 @@ a:visited {
     margin-bottom: 20px;
 }
 
-.os-content, .screens-content, .design-content, .api-content, .auth-content, 
-.func-content, .date-content, .social-content, .bill-content, .mult-content, 
-.admin-content, .sec-content {
-    height: 82vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.option-button {
-    width: 240px;
-    height: 75px;
-    border-radius: 50px;
-    border: none;
-    background-color: #adc9e9;
-    margin-top: 60px;
-    font-size: 20px;
-    font-family: "Raleway";
-    font-weight: 600;
-    color: #1e1f3d;
-}
-
 #osButtons {
     display: flex;
     justify-content: space-between;
     width: 65%;
     flex-wrap: wrap;
-}
-
-span {
-    font-size: 18px;
-}
-
-
-.counter p {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 18px;
-    font-family: "Raleway";
-    font-weight: 500;
-    color: #1e1f3d;
-    margin-right: 40px;
-    padding-top: 40px;
-}
-
-.prev-question, .prev-question-des, .prev-question-auth, .prev-question-func, 
-.prev-question-date, .prev-question-social, .prev-question-bill, .prev-question-mult, 
-.prev-question-admin, .prev-question-sec {
-    margin-left: 40px;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.estOs, .estScreens, .estAPI, .estAuth, .estDate, .estSocial, .estMult, .estAdmin{
-    font-family: "Raleway";
-    font-size: 30px;
-    font-weight: 700;
-    padding-top: 0;
-    color: #1e1f3d;
-}
-
-.estDesign, .estFunc, .estBill, .estSec {
-    font-family: "Raleway";
-    font-size: 30px;
-    font-weight: 700;
-    padding-top: 0;
-    color: #fff;
 }
 
 #screens {
@@ -181,14 +163,10 @@ span {
     flex-wrap: wrap;
 }
 
-img {
-    width: 20px;
-    vertical-align: top; 
-    margin-right: 5px;
-}
-
-
-#design, #func, #bill, #sec {
+#design,
+#func,
+#bill,
+#sec {
     height: 100vh;
     background-color: #5f619c;
 }
@@ -223,46 +201,6 @@ img {
     justify-content: space-between;
     width: 65%;
     flex-wrap: wrap;
-}
-
-.prev-question a{
-    color: #5f619c;
-}
-
-.prev-question-des a{
-    color: #b9d2ed;
-}
-
-.prev-question-func  a{
-    color: #b9d2ed;
-}
-
-.prev-question-auth a{
-    color: #5f619c;
-}
-
-.prev-question-social a{
-    color: #5f619c;
-}
-
-.prev-question-bill  a{
-    color: #b9d2ed;
-}
-
-.prev-question-date  a{
-    color: #5f619c;
-}
-
-.prev-question-mult  a{
-    color: #5f619c;
-}
-
-.prev-question-admin a{
-    color: #5f619c;
-}
-
-.prev-question-sec  a{
-    color: #b9d2ed;
 }
 
 #api {
@@ -327,18 +265,6 @@ img {
     text-align: center;
 }
 
-.func-button {
-    margin: 60px 15px 20px 15px;
-}
-
-.func-button:nth-child(5) {
-    margin: 20px 15px;
-}
-
-.func-button:nth-child(6) {
-    margin: 20px 15px;
-}
-
 #date {
     height: 100vh;
     background-color: #b9d2ed;
@@ -384,10 +310,6 @@ img {
     text-align: center;
     color: #1e1f3d;
     margin-bottom: 20px;
-}
-
-.social-button:last-child {
-    margin-top: 20px;
 }
 
 #billing {
@@ -479,6 +401,175 @@ img {
     width: 100%;
 }
 
+#errorEmailMessage,
+#errorNameMessage {
+    font-size: 18px;
+    display: block;
+    font-family: Raleway;
+    font-weight: 600;
+    color: #f72c2c;
+    padding-left: 30px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+.selected {
+    background-color: #333685 !important;
+    color: #fff !important;
+}
+
+.header-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6fd7e4;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    width: 53%;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.os-content,
+.screens-content,
+.design-content,
+.api-content,
+.auth-content,
+.func-content,
+.date-content,
+.social-content,
+.bill-content,
+.mult-content,
+.admin-content,
+.sec-content {
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.option-button {
+    width: 240px;
+    height: 75px;
+    border-radius: 50px;
+    border: none;
+    background-color: #adc9e9;
+    margin-top: 60px;
+    font-size: 20px;
+    font-family: "Raleway";
+    font-weight: 600;
+    color: #1e1f3d;
+}
+
+.counter p {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    font-family: "Raleway";
+    font-weight: 500;
+    color: #1e1f3d;
+    margin-right: 40px;
+    padding-top: 40px;
+}
+
+.prev-question,
+.prev-question-des,
+.prev-question-auth,
+.prev-question-func,
+.prev-question-date,
+.prev-question-social,
+.prev-question-bill,
+.prev-question-mult,
+.prev-question-admin,
+.prev-question-sec {
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+p.estOs,
+p.estScreens,
+p.estAPI,
+p.estAuth,
+p.estDate,
+p.estSocial,
+p.estMult,
+p.estAdmin {
+    font-family: "Raleway";
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 0;
+    color: #1e1f3d;
+}
+
+p.estDesign,
+p.estFunc,
+p.estBill,
+p.estSec {
+    font-family: "Raleway";
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 0;
+    color: #fff;
+}
+
+.prev-question a {
+    color: #5f619c;
+}
+
+.prev-question-des a {
+    color: #b9d2ed;
+}
+
+.prev-question-func a {
+    color: #b9d2ed;
+}
+
+.prev-question-auth a {
+    color: #5f619c;
+}
+
+.prev-question-social a {
+    color: #5f619c;
+}
+
+.prev-question-bill a {
+    color: #b9d2ed;
+}
+
+.prev-question-date a {
+    color: #5f619c;
+}
+
+.prev-question-mult a {
+    color: #5f619c;
+}
+
+.prev-question-admin a {
+    color: #5f619c;
+}
+
+.prev-question-sec a {
+    color: #b9d2ed;
+}
+
 .contact-content h1 {
     display: flex;
     align-items: center;
@@ -496,7 +587,7 @@ img {
     text-align: center;
     font-family: "Raleway";
     font-size: 24px;
-    color: #ffffff;
+    color: #fff;
     margin-bottom: 35px;
     line-height: 1.6;
 }
@@ -506,72 +597,4 @@ img {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-}
-
-input {
-    display: flex;
-    width: 400px;
-    height: 55px;
-    font-size: 18px;
-    font-family: "Raleway";
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 25px;
-    background-color: transparent;
-    margin-bottom: 15px;
-    padding-left: 30px;
-}
-
-input[type='submit'] {
-    justify-content: center;
-    height: 50px;
-    background-color: #b9d2ed;
-    border: none;
-    color: #1e1f3d;
-    font-weight: 700;
-    margin-top: 45px;
-    padding: 0;
-}
-
-input:focus {
-    outline: none;
-}
-
-input:focus::-webkit-input-placeholder {
-    opacity: 0;
-}
-
-::placeholder {
-    color: #fff;
-}
-
-button:hover {
-    outline: none;
-    box-shadow: 0 0 2px #79b8ff;
-    background-color: #515388;
-    color: #fff;
-    cursor: pointer;
-}
-
-button:focus {
-    outline: none;
-}
-
-input[type="submit"]:hover {
-    cursor: pointer;
-    background-color: transparent;
-    box-shadow: 0 0 2px #79b8ff;
-    color: #fff;
-}
-
-@-webkit-keyframes autofill {
-    to {
-        color: #fff;
-        background: transparent;
-    }
-}
-
-input:-webkit-autofill {
-    -webkit-animation-name: autofill;
-    -webkit-animation-fill-mode: both;
 }

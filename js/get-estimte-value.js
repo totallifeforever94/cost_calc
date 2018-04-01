@@ -73,9 +73,8 @@
             if ($(this).hasClass('selected')) {
                 $(this).siblings().removeClass('selected');
 
-
-                hoursQuantity = pricesData[currentAplicationType][screenSize][parentId][btnValue];
                 scrollToSection($(this));
+                hoursQuantity = pricesData[currentAplicationType][screenSize][parentId][btnValue];
             }
             else {
                 hoursQuantity = 0;
@@ -114,9 +113,11 @@
             let section;
             if (!$('.hourly-price-button').hasClass('selected')) {
                 section = $('#mobileOs');
+                $('.hours-quantity-button.selected, .screen-size-button.selected').removeClass('selected');
             }
             else if (!$('.screen-size-button').hasClass('selected')) {
                 section = $('#screens');
+                $('.hours-quantity-button.selected').removeClass('selected');
             }
             else {
                 section = btn.parents('section').next();

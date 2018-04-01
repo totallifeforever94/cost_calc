@@ -1,31 +1,4 @@
-// $(document).ready(function() {
-    
-//     $("#submit").click(function(event) {
-        
-//         if ($("#contactForm")[0].checkValidity()) {
-//             event.preventDefault();
-//             $.ajax({
-//                 url: "https://tranquil-sierra-86540.herokuapp.com/sava.taras@gmail.com",
-//                 method: "POST",
-//                 data: {
-//                     "name": $("#name").val(),
-//                     "email": $("#email").val(),
-//                 },
-//                 dataType: "json",
-//             })
-
-//             .done(() => {
-//                 alert('DONE!!!!');
-//                 $('#name').val('');
-//                 $('#email').val('');
-//             });
-//         }
-//     });
-// });
-
-
-
-$(function() {
+$(document).ready(function() {
     $('#errorNameMessage').hide();
     $('#errorEmailMessage').hide();
     
@@ -47,9 +20,9 @@ $(function() {
             $('#errorNameMessage').hide();
             $('#name').css({'border': '1px solid #fff'});
         } else {
-            $('#errorNameMessage').html('Only letters are allowed');
+            $('#errorNameMessage').html('Invalid name');
             $('#errorNameMessage').show();
-            $('#name').css({'border': '1px solid red'});
+            $('#name').css({'border': '1px solid #f72c2c'});
             nameError = true;
         }
     }
@@ -59,11 +32,11 @@ $(function() {
         let email = $('#email').val();
         if (pattern.test(email) && email !== '') {
             $('#errorEmailMessage').hide();
-            $('#email').css({'border': '1px solid #fff'});
+            $('#email').css({'border': '1px solid #fff'})
         } else {
             $('#errorEmailMessage').html('Invalid email');
             $('#errorEmailMessage').show();
-            $('#email').css({'border': '1px solid red'});
+            $('#email').css({'border': '1px solid #f72c2c'})
             emailError = true;
         }
     }
