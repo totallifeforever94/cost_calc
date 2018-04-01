@@ -211,11 +211,14 @@
 
     <section id="contact">
         <div class="contact-content">
+            <p class="total"></p>
             <h1>Want to get a Detailed estimate?</h1>
             <p>Just write us your name and email</p>
             <form id="contactForm">
-                <input id="name" type="text" name="client-name" placeholder="Name" pattern="[A-Za-zА-Яа-яЁё\s]+$" required>
-                <input id="email" type="email" name="client-email" placeholder="Email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <input id="name" type="text" name="client-name" placeholder="Name">
+                <span clas="error-form" id="errorNameMessage"></span>
+                <input id="email" type="email" name="client-email" placeholder="Email">
+                <span class="error-form" id="errorEmailMessage"></span>
                 <input id="submit" type="submit" value="Get Estimate">
             </form>
         </div>

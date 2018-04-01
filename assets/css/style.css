@@ -522,7 +522,7 @@ input {
     padding-left: 30px;
 }
 
-input:nth-child(3) {
+input[type='submit'] {
     justify-content: center;
     height: 50px;
     background-color: #b9d2ed;
@@ -562,4 +562,16 @@ input[type="submit"]:hover {
     background-color: transparent;
     box-shadow: 0 0 2px #79b8ff;
     color: #fff;
+}
+
+@-webkit-keyframes autofill {
+    to {
+        color: #fff;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
 }

@@ -22,7 +22,7 @@
     };
 
     $(document).ready(function() {
-
+        
         $('.hourly-price-button, .screen-size-button, .hours-quantity-button').click(function() {
             $(this).toggleClass('selected');
         });
@@ -116,7 +116,6 @@
                 section = $('#mobileOs');
             }
             else if (!$('.screen-size-button').hasClass('selected')) {
-                $('.total').html('$' + hourlyRate);
                 section = $('#screens');
             }
             else {
