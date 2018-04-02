@@ -74,9 +74,7 @@
                 $(this).siblings().removeClass('selected');
                 
                 scrollToSection($(this));
-            if (screenSize){
                 hoursQuantity = pricesData[currentAplicationType][screenSize][parentId][btnValue];
-            }
             }
             else {
                 hoursQuantity = 0;
