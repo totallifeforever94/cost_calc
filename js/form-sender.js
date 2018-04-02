@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     $('#errorNameMessage').hide();
     $('#errorEmailMessage').hide();
     
@@ -60,6 +61,9 @@ $(document).ready(function() {
         
         if (!nameError && !emailError) {
             event.preventDefault();
+            $('.modal').css({'display': 'block'});
+            $('.thanks').css({'display': 'none'});
+            
             $.ajax({
                 url: "https://tranquil-sierra-86540.herokuapp.com/sava.taras@gmail.com",
                 method: "POST",
@@ -71,9 +75,13 @@ $(document).ready(function() {
             })
 
             .done(() => {
-                alert('DONE!!!!');
+                $('.modal').css({'display': 'none'});
+                $('.thanks').css({'display': 'block'});
                 $('#name').val('');
                 $('#email').val('');
+                $('#startAgain').click(function() {
+                    $('.thanks').css({'display': 'none'});
+                });
             });
         } else {
             event.preventDefault();

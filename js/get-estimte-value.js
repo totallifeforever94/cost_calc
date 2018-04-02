@@ -60,7 +60,6 @@
             else {
                 $(this).removeClass('selected');
             }
-
             countTotalPrice();
         });
 
@@ -82,6 +81,18 @@
             totalObject[parentId] = hoursQuantity;
             countTotalPrice();
         });
+        
+        $('#startAgain').click(function() {
+           $('button').removeClass('selected');
+           for (let key in totalObject) {
+                totalObject[key] = 0;
+                hourlyRate = 0;
+                $('html, body').animate({
+                scrollTop: $("#header").offset().top
+                }, 1000);
+            }
+            countTotalPrice();
+        });
 
         function countTotalPrice() {
             totalSum = 0;
@@ -99,6 +110,7 @@
         }
 
         function recountHoursQuantity() {
+            
             $('.hours-quantity-button.selected').each(function(item) {
                 let btnValue = $('.hours-quantity-button.selected')[item].value;
                 let parentId = $('.hours-quantity-button.selected')[item].parentNode.id;
