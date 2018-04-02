@@ -658,9 +658,9 @@ p.estSec {
 
 .thank-you {
     width: 60%;
-    border: 2px solid #fff;
     padding-bottom: 20px;
     border-radius: 25px;
+    background-color: transparent;
 }
 
 .thanks-modal {
@@ -672,6 +672,7 @@ p.estSec {
     margin-bottom: 35px;
     line-height: 1.6;
     padding-top: 15px;
+    font-weight: 800;
 }
 
 #startAgain {
@@ -682,6 +683,6 @@ p.estSec {
     border-radius: 25px;
     padding: 15px 60px;
     border: none;
-    background-color: #b9d2ed;
-    color: #1e1f3d;
+    background-color: #1e1f3d;
+    color: #fff;
 }

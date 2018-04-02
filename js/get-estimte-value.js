@@ -86,11 +86,11 @@
            $('button').removeClass('selected');
            for (let key in totalObject) {
                 totalObject[key] = 0;
-                hourlyRate = 0;
-                $('html, body').animate({
-                scrollTop: $("#header").offset().top
-                }, 1000);
             }
+            $('html, body').animate({
+                scrollTop: $("#header").offset().top
+                }, 2000);
+            hourlyRate = 0;    
             countTotalPrice();
         });
 
