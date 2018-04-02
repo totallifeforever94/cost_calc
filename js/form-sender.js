@@ -77,9 +77,12 @@ $(document).ready(function() {
             .done(() => {
                 $('.modal').css({'display': 'none'});
                 $('.thanks').css({'display': 'block'});
+                $('#startAgain').click(function() {
+                    $('.thanks').css({'display': 'none'});
+                });
                 $('#name').val('');
                 $('#email').val('');
-                $('#startAgain').click(function() {
+                $('.stay').click(function(){
                     $('.thanks').css({'display': 'none'});
                 });
             });

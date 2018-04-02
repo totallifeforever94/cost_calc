@@ -686,3 +686,21 @@ p.estSec {
     background-color: #1e1f3d;
     color: #fff;
 }
+
+.stay {
+    font-family: 'Raleway';
+    display: flex;
+    justify-content: center;
+    color: #f72c2c;
+    margin-top: 10px;
+}
+
+.stay:hover {
+    cursor: pointer;
+}
+
+.contact-content p.total {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
