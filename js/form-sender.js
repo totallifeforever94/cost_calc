@@ -5,20 +5,25 @@ $(document).ready(function() {
     let nameError = false;
     let emailError = false;
     
-    $('#name').focusout(function() {
+    $('#name').keyup(function() {
         checkName();
     });
     
-    $('#email').focusout(function() {
+    $('#email').keyup(function() {
         checkEmail();  
     });
     
     function checkName() {
-        let pattern = /[A-Za-zА-Яа-яЁё\s]+$/;
+        let pattern = /^[a-zA-Z]+(\s[a-zA-Z]*){0,2}$/;
         let name = $('#name').val();
         if (pattern.test(name) && name !== '') {
             $('#errorNameMessage').hide();
             $('#name').css({'border': '1px solid #fff'});
+        } else if (name === ''){
+            $('#errorNameMessage').html('This field is required');
+            $('#errorNameMessage').show();
+            $('#name').css({'border': '1px solid #f72c2c'});
+            nameError = true;
         } else {
             $('#errorNameMessage').html('Invalid name');
             $('#errorNameMessage').show();
@@ -33,6 +38,11 @@ $(document).ready(function() {
         if (pattern.test(email) && email !== '') {
             $('#errorEmailMessage').hide();
             $('#email').css({'border': '1px solid #fff'})
+        } else if (email === '') {
+            $('#errorEmailMessage').html('This field is required');
+            $('#errorEmailMessage').show();
+            $('#email').css({'border': '1px solid #f72c2c'})
+            emailError = true;
         } else {
             $('#errorEmailMessage').html('Invalid email');
             $('#errorEmailMessage').show();
