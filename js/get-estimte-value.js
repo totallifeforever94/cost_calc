@@ -72,9 +72,11 @@
 
             if ($(this).hasClass('selected')) {
                 $(this).siblings().removeClass('selected');
-
+                
                 scrollToSection($(this));
+            if (screenSize){
                 hoursQuantity = pricesData[currentAplicationType][screenSize][parentId][btnValue];
+            }
             }
             else {
                 hoursQuantity = 0;
@@ -97,7 +99,7 @@
 
         function countTotalPrice() {
             totalSum = 0;
-
+        
             for (let key in totalObject) {
                 totalSum += totalObject[key] * hourlyRate;
             }
@@ -118,7 +120,7 @@
             $('.hours-quantity-button.selected').each(function(item) {
                 let btnValue = $('.hours-quantity-button.selected')[item].value;
                 let parentId = $('.hours-quantity-button.selected')[item].parentNode.id;
-
+                
                 hoursQuantity = pricesData[currentAplicationType][screenSize][parentId][btnValue];
                 totalObject[parentId] = hoursQuantity;
             });
