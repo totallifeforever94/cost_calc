@@ -22,7 +22,7 @@
     };
 
     $(document).ready(function() {
-        
+
         $('.hourly-price-button, .screen-size-button, .hours-quantity-button').click(function() {
             $(this).toggleClass('selected');
         });
@@ -58,9 +58,10 @@
                 recountHoursQuantity();
             }
             else {
+                screenSize = undefined;
                 $(this).removeClass('selected');
             }
-            countTotalPrice();
+            countTotalPrice()
         });
 
         $('.hours-quantity-button').click(function() {
@@ -81,16 +82,16 @@
             totalObject[parentId] = hoursQuantity;
             countTotalPrice();
         });
-        
+
         $('#startAgain').click(function() {
-           $('button').removeClass('selected');
-           for (let key in totalObject) {
+            $('button').removeClass('selected');
+            for (let key in totalObject) {
                 totalObject[key] = 0;
             }
             $('html, body').animate({
                 scrollTop: $("#header").offset().top
-                }, 2000);
-            hourlyRate = 0;    
+            }, 2000);
+            hourlyRate = 0;
             countTotalPrice();
         });
 
@@ -104,13 +105,16 @@
             if (totalSum === 0) {
                 return $('.total').html('$' + hourlyRate);
             }
+            else if (screenSize === undefined) {
+                return $('.total').html('$' + hourlyRate);
+            }
             else {
                 $('.total').html('$' + totalSum);
             }
         }
 
         function recountHoursQuantity() {
-            
+
             $('.hours-quantity-button.selected').each(function(item) {
                 let btnValue = $('.hours-quantity-button.selected')[item].value;
                 let parentId = $('.hours-quantity-button.selected')[item].parentNode.id;
