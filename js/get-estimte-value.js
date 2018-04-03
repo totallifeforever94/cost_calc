@@ -70,13 +70,13 @@
             let parentId = $(this).parent().attr('id');
 
 
-            if ($(this).hasClass('selected') && screenSize) {
+            if ($(this).hasClass('selected') && screenSize && hourlyRate) {
                 $(this).siblings().removeClass('selected');
                 
                 hoursQuantity = pricesData[currentAplicationType][screenSize][parentId][btnValue];
                 scrollToSection($(this));
             }
-            else if ($(this).hasClass('selected')){
+            else if ($(this).hasClass('selected') && screenSize){
                 $(this).siblings().removeClass('selected');
                 hoursQuantity = 0;
                 scrollToSection($(this));
