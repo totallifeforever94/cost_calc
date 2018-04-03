@@ -77,6 +77,7 @@
                 scrollToSection($(this));
             }
             else if ($(this).hasClass('selected')){
+                $(this).siblings().removeClass('selected');
                 hoursQuantity = 0;
                 scrollToSection($(this));
             } else {
