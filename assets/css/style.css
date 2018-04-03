@@ -700,7 +700,7 @@ p.estSec {
 }
 
 @media (max-width: 593px) {
-    
+
     span {
         font-size: 12px;
     }
@@ -718,8 +718,28 @@ p.estSec {
 
     img {
         width: 13px;
-    }url
-    
+    }
+
+    p.estDesign,
+    p.estFunc,
+    p.estBill,
+    p.estSec {
+        font-size: 26px;
+        padding-top: 0;
+    }
+
+    p.estOs,
+    p.estScreens,
+    p.estAPI,
+    p.estAuth,
+    p.estDate,
+    p.estSocial,
+    p.estMult,
+    p.estAdmin {
+        font-size: 26px;
+        padding-top: 0
+    }
+
     #get-estimate {
         font-size: 12px;
         padding: 16px 50px;
@@ -746,7 +766,13 @@ p.estSec {
     #func h1 {
         padding-top: 60px;
     }
-    
+
+    #startAgain {
+        width: 200px;
+        height: 42px;
+        padding: 0;
+    }
+
     .option-button {
         width: 190px;
         height: 55px;
@@ -800,26 +826,6 @@ p.estSec {
         margin-right: 15px;
     }
 
-    p.estDesign,
-    p.estFunc,
-    p.estBill,
-    p.estSec {
-        font-size: 26px;
-        padding-top: 0;
-    }
-
-    p.estOs,
-    p.estScreens,
-    p.estAPI,
-    p.estAuth,
-    p.estDate,
-    p.estSocial,
-    p.estMult,
-    p.estAdmin {
-        font-size: 26px;
-        padding-top: 0
-    }
-
     .thank-you-modal {
         width: 70%;
         padding-bottom: 20px;
@@ -828,12 +834,6 @@ p.estSec {
     .modal-header {
         width: 100%;
         line-height: 1;
-    }
-
-    #startAgain {
-        width: 200px;
-        height: 42px;
-        padding: 0;
     }
 
     .contact-content p.total {
