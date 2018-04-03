@@ -749,10 +749,12 @@ p.estSec {
     #sec h1,
     .contact-content h1 {
         font-size: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     #func h1 {
-        padding-top: 20px;
+        padding-top: 60px;
     }
 
     span {
