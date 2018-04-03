@@ -82,7 +82,6 @@
                 scrollToSection($(this));
             } else {
                 hoursQuantity = 0;
-                scrollToSection($(this));
             }
             totalObject[parentId] = hoursQuantity;
             countTotalPrice();
