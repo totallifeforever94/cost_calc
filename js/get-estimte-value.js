@@ -69,18 +69,17 @@
             let parentId = $(this).parent().attr('id');
 
 
-
-            if ($(this).hasClass('selected')) {
+            if ($(this).hasClass('selected') && screenSize) {
                 $(this).siblings().removeClass('selected');
                 
-                scrollToSection($(this));
                 hoursQuantity = pricesData[currentAplicationType][screenSize][parentId][btnValue];
+                countTotalPrice();
             }
             else {
                 hoursQuantity = 0;
             }
             totalObject[parentId] = hoursQuantity;
-            countTotalPrice();
+            scrollToSection($(this));
         });
 
         $('#startAgain').click(function() {
@@ -97,7 +96,7 @@
 
         function countTotalPrice() {
             totalSum = 0;
-        
+            
             for (let key in totalObject) {
                 totalSum += totalObject[key] * hourlyRate;
             }
@@ -134,8 +133,7 @@
             else if (!$('.screen-size-button').hasClass('selected')) {
                 section = $('#screens');
                 $('.hours-quantity-button.selected').removeClass('selected');
-            }
-            else {
+            } else {
                 section = btn.parents('section').next();
             }
             $('html, body').animate({
