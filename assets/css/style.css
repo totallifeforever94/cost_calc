@@ -720,24 +720,24 @@ p.estSec {
         width: 13px;
     }
 
-    p.estDesign,
-    p.estFunc,
-    p.estBill,
-    p.estSec {
+    p.estDesign.total,
+    p.estFunc.total,
+    p.estBill.total,
+    p.estSec.total {
         font-size: 26px;
         padding-top: 0;
     }
 
-    p.estOs,
-    p.estScreens,
-    p.estAPI,
-    p.estAuth,
-    p.estDate,
-    p.estSocial,
-    p.estMult,
-    p.estAdmin {
+    p.estOs.total,
+    p.estScreens.total,
+    p.estAPI.total,
+    p.estAuth.total,
+    p.estDate.total,
+    p.estSocial.total,
+    p.estMult.total,
+    p.estAdmin.total {
         font-size: 26px;
-        padding-top: 0
+        padding-top: 0;
     }
 
     #get-estimate {
