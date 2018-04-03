@@ -82,6 +82,7 @@
                 scrollToSection($(this));
             } else {
                 hoursQuantity = 0;
+                scrollToSection();
             }
             totalObject[parentId] = hoursQuantity;
             countTotalPrice();
@@ -123,8 +124,12 @@
                 let btnValue = $('.hours-quantity-button.selected')[item].value;
                 let parentId = $('.hours-quantity-button.selected')[item].parentNode.id;
                 
-                hoursQuantity = pricesData[currentAplicationType][screenSize][parentId][btnValue];
-                totalObject[parentId] = hoursQuantity;
+                if (screenSize) {
+                    hoursQuantity = pricesData[currentAplicationType][screenSize][parentId][btnValue];
+                    totalObject[parentId] = hoursQuantity;
+                } else {
+                    hoursQuantity = 0;
+                }
             });
         }
 
