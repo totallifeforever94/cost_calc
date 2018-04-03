@@ -136,7 +136,7 @@
             else if (!$('.screen-size-button').hasClass('selected')) {
                 section = $('#screens');
             } else {
-                section = btn.parents('section').siblings().not('.option-not-selected');
+                section = btn.parents('section').nextAll().not('.option-not-selected');
             }
             $('html, body').animate({
                 scrollTop: section.offset().top
