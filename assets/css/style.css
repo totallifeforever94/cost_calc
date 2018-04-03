@@ -616,7 +616,7 @@ p.estSec {
 }
 
 .modal-content {
-    height: 65vh;
+    height: 67vh;
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -827,7 +827,7 @@ p.estSec {
     }
 
     .thank-you-modal {
-        width: 70%;
+        width: 80%;
         padding-bottom: 20px;
     }
 
