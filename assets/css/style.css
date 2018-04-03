@@ -459,14 +459,14 @@ input:-webkit-autofill {
 .screens-content,
 .design-content,
 .api-content,
-.auth-content,
-.func-content,
+.authentifiaction-content,
+.functionality-content,
 .date-content,
 .social-content,
-.bill-content,
-.mult-content,
-.admin-content,
-.sec-content {
+.billing-content,
+.multimedia-content,
+.administration-content,
+.security-content {
     height: 82vh;
     display: flex;
     flex-direction: column;
@@ -784,14 +784,14 @@ p.estSec {
     .screens-content,
     .design-content,
     .api-content,
-    .auth-content,
-    .func-content,
+    .authentifiaction-content,
+    .functionality-content,
     .date-content,
     .social-content,
-    .bill-content,
-    .mult-content,
-    .admin-content,
-    .sec-content {
+    .billing-content,
+    .multimedia-content,
+    .administration-content,
+    .security-content {
         height: 75vh;
     }
 
