@@ -73,13 +73,16 @@
                 $(this).siblings().removeClass('selected');
                 
                 hoursQuantity = pricesData[currentAplicationType][screenSize][parentId][btnValue];
-                countTotalPrice();
+                scrollToSection($(this));
             }
-            else {
+            else if ($(this).hasClass('selected')){
+                hoursQuantity = 0;
+                scrollToSection($(this));
+            } else {
                 hoursQuantity = 0;
             }
             totalObject[parentId] = hoursQuantity;
-            scrollToSection($(this));
+            countTotalPrice();
         });
 
         $('#startAgain').click(function() {
