@@ -604,7 +604,7 @@ p.estSec {
 }
 
 .modal {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.93);
     position: fixed;
     top: 0;
     right: 0;
@@ -638,7 +638,6 @@ p.estSec {
 }
 
 .thank-you-modal {
-    background-color: rgba(0, 0, 0, 0.78);
     width: 50%;
     padding-bottom: 20px;
     height: 300px;
