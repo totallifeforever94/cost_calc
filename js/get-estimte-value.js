@@ -131,11 +131,9 @@
             let section;
             if (!$('.hourly-price-button').hasClass('selected')) {
                 section = $('#mobileOs');
-                $('.hours-quantity-button.selected, .screen-size-button.selected').removeClass('selected');
             }
             else if (!$('.screen-size-button').hasClass('selected')) {
                 section = $('#screens');
-                $('.hours-quantity-button.selected').removeClass('selected');
             } else {
                 section = btn.parents('section').next();
             }

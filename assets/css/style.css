@@ -764,7 +764,7 @@ p.estSec {
     .contact-content p {
         width: 90%;
         font-size: 18px;
-        margin-top: 10px;
+        margin-top: 0;
     }
 
     input {
