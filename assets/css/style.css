@@ -582,8 +582,12 @@ p.estSec {
     font-family: "Raleway";
     font-size: 24px;
     color: #fff;
-    margin-bottom: 35px;
+    margin-bottom: 0;
     line-height: 1.6;
+}
+
+.contact-content p.write-us {
+    margin-bottom: 35px;
 }
 
 .contact-content {

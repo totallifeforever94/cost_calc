@@ -25,7 +25,7 @@
 
         $('.hourly-price-button, .screen-size-button, .hours-quantity-button').click(function() {
             $(this).toggleClass('selected');
-            $(this).parents('section').toggleClass('option-not-selected');
+            $(this).parents('section').toggleClass('option-selected');
         });
 
         $.getJSON('js/prices.json', function(data) {
@@ -137,7 +137,7 @@
             else if (!$('.screen-size-button').hasClass('selected')) {
                 section = $('#screens');
             } else {
-                section = btn.parents('section').nextAll().not('.option-not-selected');
+                section = btn.parents('section').nextAll().not('.option-selected');
             }
             $('html, body').animate({
                 scrollTop: section.offset().top
