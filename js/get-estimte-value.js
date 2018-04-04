@@ -76,12 +76,13 @@
                 hoursQuantity = pricesData[currentAplicationType][screenSize][parentId][btnValue];
                 scrollToSection($(this));
             }
-            else if ($(this).hasClass('selected') && screenSize){
+            else if ($(this).hasClass('selected')){
                 $(this).siblings().removeClass('selected');
                 hoursQuantity = 0;
                 scrollToSection($(this));
-            } else {
+            } else if ($(this).not('.selected')){
                 hoursQuantity = 0;
+                scrollToSection($(this));
             }
             totalObject[parentId] = hoursQuantity;
             countTotalPrice();
@@ -140,8 +141,10 @@
             }
             else if (!$('.screen-size-button').hasClass('selected')) {
                 section = $('#screens');
-            } else {
+            } else if ($('.hours-quantity-button').hasClass('selected') || $('.screen-size-button').hasClass('selected') || $('.hourly-price-button').hasClass('selected')){
                 section = btn.parents('section').nextAll().not('.option-selected');
+            } else {
+                return;
             }
             $('html, body').animate({
                 scrollTop: section.offset().top
