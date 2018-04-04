@@ -82,7 +82,6 @@
                 scrollToSection($(this));
             } else if ($(this).not('.selected')){
                 hoursQuantity = 0;
-                scrollToSection($(this));
             }
             totalObject[parentId] = hoursQuantity;
             countTotalPrice();
@@ -141,15 +140,12 @@
             }
             else if (!$('.screen-size-button').hasClass('selected')) {
                 section = $('#screens');
-            } else if ($('.hours-quantity-button').hasClass('selected') || $('.screen-size-button').hasClass('selected') || $('.hourly-price-button').hasClass('selected')){
-                section = btn.parents('section').nextAll().not('.option-selected');
             } else {
-                return;
+                section = btn.parents('section').nextAll().not('.option-selected');
             }
             $('html, body').animate({
                 scrollTop: section.offset().top
             }, 1000);
         };
-
     });
 })();
